@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app/app.component';
 import { WeatherComponent } from './weather/weather.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutes } from './routes';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { WeatherComponent } from './weather/weather.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AppRoutingModule,
+    RouterModule.forRoot(AppRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
