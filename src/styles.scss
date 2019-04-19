@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+* {
+
+  margin:0;
+  
+  padding:0;
+  
+  }
+.header {
+  padding-top:20px;
+  padding-bottom:20px;
+    position: fixed;
+    width: 100%;
+    color: #f1f1f1;
+    background: #bc305b;
+    background: -moz-linear-gradient(left, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+    background: -webkit-linear-gradient(left, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+    background: linear-gradient(to right, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  .col-md-6{
+      text-align: center;
+      padding-top: 10px;
+      font-family: 'Montserrat', sans-serif;
+      color: rgb(58, 58, 58);
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #bc305b;
+    background: -moz-linear-gradient(left, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+    background: -webkit-linear-gradient(left, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+    background: linear-gradient(to right, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+    color: white;
+    text-align: center;
+    align-content: center;
+ }
