@@ -6,11 +6,13 @@ import { AppComponent } from './app/app.component';
 import { WeatherComponent } from './weather/weather.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutes } from './routes';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherComponent
+    WeatherComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
