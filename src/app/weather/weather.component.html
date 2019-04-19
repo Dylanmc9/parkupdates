@@ -1,3 +1,54 @@
-<p>
-  weather works!
-</p>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+</head>
+
+<div class="header">
+<h2>Weather</h2>
+</div>
+
+
+<br><br><br><br><br><br>
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
+    <h3 class="text-center my-4">Search for Weather <i class="fas fa-sun"></i>:</h3>
+    <form [formGroup]="weatherSearchForm" (ngSubmit)="sendToWeatherService(weatherSearchForm.value)">
+      <div class="form-group">
+       <input
+      class="form-control"
+      type="text"
+      id="weatherLocation"
+      aria-describedby="weatherLocation"
+      placeholder="Please input a location e.g Orlando"
+      formControlName="location" />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success btn-md">Search for the weather <i class="fas fa-search"></i></button>
+    </div>
+     </form> 
+  </div>
+
+  <div class="col-md-6"><h3 class="text-center">Weather Details in:<br><i>{{this.weatherData?.location.name}}
+      {{this.weatherData?.location.country}}</i></h3>
+   
+    <p class="text-center">
+      Current weather conditions: <b>{{this.weatherData?.current.condition.text}}</b>
+    </p>
+    <p class="text-center">
+      Temperature in Degrees Celsius: <b>{{this.weatherData?.current.temp_c}}ºC</b>
+    </p>
+    <p class="text-center">
+      Temperature in Degrees Farenheit: <b>{{this.weatherData?.current.temp_f}}ºF</b>
+    </p>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <div class="topnav">
+      <a [routerLink]="['/']" class="active"><i class="fas fa-home"></i></a>
+      <a [routerLink]="['/']" class="active"><i class="far fa-newspaper"></i></a>
+      <a [routerLink]="['/']" class="active"><i class="fas fa-map-marked-alt"></i></a>
+    </div>
+    
+</div>

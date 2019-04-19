@@ -1,0 +1,39 @@
+.topnav {
+    overflow: hidden;
+    align-content: center;
+  }
+  
+  .topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background: linear-gradient(#f3ab4d, #ff9306);
+    color: rgb(54, 54, 54);
+  }
+  
+  .active {
+
+    color: white;
+  }
+  i{
+      font-size: 30px;
+  }
+
+  .btn, btn-success, btn-md{
+    background-color: #bc305b;
+    border: #bc305b;
+  }
+  .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    background: linear-gradient(#f3ab4d, #ff9306);
+    box-shadow: 5px 5px 5px #888888;
+  }
+  
