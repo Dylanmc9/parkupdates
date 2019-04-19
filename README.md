@@ -1,6 +1,7 @@
 # Parkupdates
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+Angular web app to keep you up to date with all things theme park related.
 
 ## Development server
 
