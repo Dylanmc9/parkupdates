@@ -10,11 +10,13 @@ import { LandingComponent } from './landing/landing.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { WeatherService } from "./weather.service";
+import { NewsComponent } from './news/news.component';
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
-    LandingComponent
+    LandingComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
