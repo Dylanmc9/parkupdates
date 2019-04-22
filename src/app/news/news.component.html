@@ -1,3 +1,31 @@
-<p>
-  news works!
-</p>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+</head>
+<div class="header">
+  <h2>News</h2>
+  </div>
+  <br><br><br><br>
+
+
+<div class="page-wrapper">
+<h1>The latest updates from all the parks</h1>
+</div>
+
+<div class="newcard" *ngFor="let post of posts$ | async">
+  <img matCardImage [src]="post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url">
+  <h2>{{ post.title.rendered }}</h2>
+  <p>{{ post.date_gmt | date }}</p>
+  <p class="post-excerpt" [innerHtml]="post.excerpt.rendered"></p>
+  <a [href]="post.link"><input type="submit" value="   More   " class="landing-btn"></a>
+</div>
+<br><br><br><br>
+<div class="footer">
+  <div class="topnav">
+      <a [routerLink]="['/']" class="active"><i class="fas fa-home"></i></a>
+      <a [routerLink]="['/news']" class="active"><i class="far fa-newspaper"></i></a>
+      <a [routerLink]="['/weather']" class="active"><i class="fas fa-sun"></i></a>
+      <a [routerLink]="['/']" class="active"><i class="fas fa-map-marked-alt"></i></a>
+    </div>
+    
+</div>
