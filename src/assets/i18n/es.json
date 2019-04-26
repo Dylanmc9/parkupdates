@@ -7,6 +7,8 @@
       "WeatherCondition": "Condiciones climáticas actuales:",
       "WeatherTemp": "Temperatura en grados centígrados:",
       "WeatherFar": "Temperatura en grados Farenheit:",
+      "NewsTitle": "Noticias",
+      "NewsCaption": "Las últimas actualizaciones de todos los parques.",
       "CHANGE_LANG": "Cambiar idioma"
     }
 }
