@@ -2,13 +2,13 @@
   
   <div class="landing-card">
       <main class="content">
-        <h3 class="landing-text">Keeping you up to date with all things theme park related!
-        <br>Press the button below to begin.
+          <app-swap-language></app-swap-language>
+        <h3 class="landing-text">{{'APP.LandingContent' | translate}}
       </h3>
 <img class="logo" src="../assets/logo.png" alt="logo">
 
       <a [routerLink]="['/weather']">
-        <input type="submit" value="   Get Started   " class="landing-btn">
+        <input type="submit" value="   {{'APP.LandingButton' | translate}}   " class="landing-btn">
       </a>
 </main>
 
