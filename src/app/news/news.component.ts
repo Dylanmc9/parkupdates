@@ -11,8 +11,11 @@ export class NewsComponent {
 
   posts$: Observable<any[]>;
   
+  showSpinner: boolean = true;
+
   constructor(private wp: WordpressService) {
     this.posts$ = this.wp.getPosts();
+    this.posts$.subscribe(() => this.showSpinner = false)
   }
 
 }

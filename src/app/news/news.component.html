@@ -13,12 +13,13 @@
 <h1>{{'APP.NewsCaption' | translate}}</h1>
 </div>
 
+<app-spinner-load *ngIf="showSpinner"></app-spinner-load>
 <div class="newcard" *ngFor="let post of posts$ | async">
   <img matCardImage [src]="post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url">
   <h2>{{ post.title.rendered }}</h2>
   <p>{{ post.date_gmt | date }}</p>
   <p class="post-excerpt" [innerHtml]="post.excerpt.rendered"></p>
-  <a [href]="post.link"><input type="submit" value="   More   " class="landing-btn"></a>
+  <a [href]="post.link"><input type="submit" value="   {{'APP.NewsLink' | translate}}   " class="landing-btn"></a>
 </div>
 <br><br><br><br>
 <div class="footer">

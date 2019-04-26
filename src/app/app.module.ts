@@ -15,6 +15,7 @@ import { SwapLanguageComponent } from './swap-language/swap-language.component';
 import {TranslateModule} from '@ngx-translate/core';
 import {TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { SpinnerLoadComponent } from './spinner-load/spinner-load.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -32,7 +33,8 @@ const translateModule = TranslateModule.forRoot({loader: {
     WeatherComponent,
     LandingComponent,
     NewsComponent,
-    SwapLanguageComponent
+    SwapLanguageComponent,
+    SpinnerLoadComponent
   ],
   imports: [
     BrowserModule,

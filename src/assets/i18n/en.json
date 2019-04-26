@@ -8,6 +8,7 @@
       "WeatherTemp": "Temperature in Degrees Celsius:",
       "WeatherFar": "Temperature in Degrees Farenheit:",
       "NewsTitle": "News",
+      "NewsLink": "More",
       "NewsCaption": "The latest updates from all the parks",
       "LandingContent": "Keeping you up to date with all things theme park related!Press the button below to begin.",
       "LandingButton": "Get Started",
