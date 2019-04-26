@@ -7,6 +7,11 @@
   padding:0;
   
   }
+  router-outlet ~ * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 .header {
   padding-top:20px;
   padding-bottom:20px;
