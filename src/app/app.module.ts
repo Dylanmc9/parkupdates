@@ -8,10 +8,23 @@ import { RouterModule } from '@angular/router';
 import { AppRoutes } from './routes';
 import { LandingComponent } from './landing/landing.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { WeatherService } from "./weather.service";
 import { NewsComponent } from './news/news.component';
 import { SwapLanguageComponent } from './swap-language/swap-language.component';
+import {TranslateModule} from '@ngx-translate/core';
+import {TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient);
+}
+
+const translateModule = TranslateModule.forRoot({loader: {
+  provide   : TranslateLoader,
+  useFactory: HttpLoaderFactory,
+  deps      : [HttpClient]
+}});
 
 @NgModule({
   declarations: [
@@ -28,7 +41,9 @@ import { SwapLanguageComponent } from './swap-language/swap-language.component';
     RouterModule.forRoot(AppRoutes),
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    translateModule
   ],
   providers: [
     WeatherService
