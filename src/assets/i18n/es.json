@@ -1,6 +1,12 @@
 {
     "APP": {
-      "TITLE"      : "Actualizaciones Del Parque",
+      "WeatherTitle": "Clima",
+      "WeatherDetails": "Detalles del clima en:",
+      "WeatherSearch": "Buscar clima",
+      "WeatherInput": "Por favor ingrese una ubicación, por ejemplo, Orlando",
+      "WeatherCondition": "Condiciones climáticas actuales:",
+      "WeatherTemp": "Temperatura en grados centígrados:",
+      "WeatherFar": "Temperatura en grados Farenheit:",
       "CHANGE_LANG": "Cambiar idioma"
     }
 }

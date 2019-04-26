@@ -1,6 +1,12 @@
 {
     "APP": {
-      "TITLE"      : "ParkUpdates",
-      "CHANGE_LANG": "Select Language"
+      "WeatherTitle": "Weather",
+      "WeatherDetails": "Weather Details in:",
+      "WeatherSearch": "Search for Weather",
+      "WeatherInput": "Please input a location e.g Orlando",
+      "WeatherCondition": "Current weather conditions:",
+      "WeatherTemp": "Temperature in Degrees Celsius:",
+      "WeatherFar": "Temperature in Degrees Farenheit:",
+      "CHANGE_LANG" : "Select Language"
     }
   }
