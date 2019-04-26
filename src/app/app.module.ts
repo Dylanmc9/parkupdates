@@ -11,13 +11,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { WeatherService } from "./weather.service";
 import { NewsComponent } from './news/news.component';
+import { SwapLanguageComponent } from './swap-language/swap-language.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
     LandingComponent,
-    NewsComponent
+    NewsComponent,
+    SwapLanguageComponent
   ],
   imports: [
     BrowserModule,
