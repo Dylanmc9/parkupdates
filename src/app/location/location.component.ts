@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationComponent implements OnInit {
 
-  constructor() { }
+  public lat;
+  public lng;
 
-  ngOnInit() {
+
+  public ngOnInit(): void {
+    this.getLocation();
+  }
+
+  getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position: Position) => {
+        if (position) {
+          console.log("Latitude: " + position.coords.latitude +
+            "Longitude: " + position.coords.longitude);
+          this.lat = position.coords.latitude;
+          this.lng = position.coords.longitude;
+        }
+      },
+        (error: PositionError) => console.log(error));
+    } else {
+      alert("Geolocation not supported in your browser.");
+    }
   }
 
 }
