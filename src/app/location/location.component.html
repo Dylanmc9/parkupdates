@@ -7,11 +7,20 @@
 <h2>{{'APP.LocationTitle' | translate}} </h2>
 <app-swap-language></app-swap-language>
 </div>
-
+<div class="space"></div>
+<div class="container">
 <div class="location">
-  <p><a href='https://www.openstreetmap.org/#map=17/{{lat}}/{{lng}}'>{{'APP.LocationLink' | translate}}</a></p>
+  <p><a href='https://www.openstreetmap.org/#map=17/{{lat}}/{{lng}}'>{{'APP.LocationLink' | translate}} </a><i class="fas fa-street-view"></i></p>
 </div>
+</div>
+<br><br>
 
+<div class="container">
+  <div class="location">
+    <p><a href='https://www.openstreetmap.org/#map=17/{{lat}}/{{lng}}'>{{'APP.LocationLink' | translate}} </a><i class="fas fa-dharmachakra"></i></p>
+  </div>
+  </div>
+  <div class="space"></div>
 <div class="footer">
   <div class="topnav">
       <a [routerLink]="['/']" class="active"><i class="fas fa-home"></i></a>

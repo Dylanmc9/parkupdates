@@ -1,4 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+a{
+    color: white;
+}
 .location
 {
-    padding-top: 300px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+    
+
 }
+.space{
+    padding-top: 150px;
+}
+.container{
+
+    padding-bottom: 50px;
+    border-radius: 25px; 
+    background-image: url(../../assets/park.png);
+    //background: linear-gradient(#f3ab4d, #ff9306);
+    background: cover; 
+    box-shadow: 5px 5px 5px #888888;
+
+  }
+  
