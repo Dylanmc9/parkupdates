@@ -17,6 +17,7 @@ import {TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { SpinnerLoadComponent } from './spinner-load/spinner-load.component';
 import { LocationComponent } from './location/location.component';
+import { ParkmapComponent } from './parkmap/parkmap.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -36,7 +37,8 @@ const translateModule = TranslateModule.forRoot({loader: {
     NewsComponent,
     SwapLanguageComponent,
     SpinnerLoadComponent,
-    LocationComponent
+    LocationComponent,
+    ParkmapComponent
   ],
   imports: [
     BrowserModule,
