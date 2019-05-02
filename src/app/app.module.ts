@@ -18,6 +18,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { SpinnerLoadComponent } from './spinner-load/spinner-load.component';
 import { LocationComponent } from './location/location.component';
 import { ParkmapComponent } from './parkmap/parkmap.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -49,7 +50,9 @@ const translateModule = TranslateModule.forRoot({loader: {
     HttpClientModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    translateModule
+    translateModule,
+    LeafletModule.forRoot()
+    
   ],
   providers: [
     WeatherService
