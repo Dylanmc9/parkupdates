@@ -1,0 +1,21 @@
+.top{
+    padding-top:20px;
+    padding-bottom:10px;
+      width: 100%;
+      color: #f1f1f1;
+      background: #bc305b;
+      background: -moz-linear-gradient(left, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+      background: -webkit-linear-gradient(left, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+      background: linear-gradient(to right, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      text-align: center;
+}
+.left{
+    float:left;padding-top: 25px;
+    padding-left: 10px;
+}
+.right{
+    float:right;padding-top: 25px;
+    padding-right: 10px;
+}

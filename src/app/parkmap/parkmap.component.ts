@@ -50,7 +50,7 @@ export class ParkmapComponent {
       iconAnchor: [ 13, 41 ],
       iconUrl: 'http://kairossmartsolutions.com/wp-content/uploads/2018/03/local-pin-e1348168117876.png',
       shadowUrl: 'leaflet/marker-shadow.png',
-  //leaflet/marker-icon.png
+ 
     })
   });
 
@@ -66,6 +66,7 @@ export class ParkmapComponent {
   options = {
     layers: [ this.streetMaps, this.summit, this.paradise, this.buschGardens, this.seaWorld ],  //this.route to add route
     zoom: 12,
+    zoomAnimation: true,
     center: latLng([ 28.385233, -81.563873 ]) //map location on entering app
   };
 
