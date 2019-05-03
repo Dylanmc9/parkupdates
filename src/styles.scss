@@ -81,10 +81,11 @@ i{
 .underheader{
   padding-top:140px;
    padding-bottom:20px;
-   background-color:lightgray;
+   background-color:rgb(231, 229, 229);
    font-family: 'Montserrat', sans-serif;
    text-align: center;
-   color: #da7e06;
+   color: #bc305b;
+   box-shadow: 1px 1px 8px rgba(0,0,0,.6);
 }
 .map {
   height: 100%;
