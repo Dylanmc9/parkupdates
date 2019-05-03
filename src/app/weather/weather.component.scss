@@ -27,14 +27,17 @@
   }
 
   .btn, btn-success, btn-md{
-    background-color: #bc305b;
-    border: #bc305b;
+    background-color: #f3ab4d;
+    border: #f3ab4d
+  }
+  .btn:hover{
+    background-color: #ff9306;
+    color: rgb(43, 43, 43);
   }
   .container{
     padding-top: 50px;
     padding-bottom: 50px;
-    border-radius: 25px;
-    background: linear-gradient(#f3ab4d, #ff9306);
+    border-radius: 10px;
     box-shadow: 1px 1px 8px rgba(0,0,0,.6);
   }
   
