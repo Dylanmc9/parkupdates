@@ -17,6 +17,9 @@
       "LocationParks": "Theme parks location",
       "LocationNavHome": "Home",
       "LocationNavLocation": "My Location",
+      "HomeTitle": "Home",
+      "HomeMessage": "Welcome, scroll to navigate.",
+      "Back": "Back",
       "CHANGE_LANG" : "Select Language"
     }
   }

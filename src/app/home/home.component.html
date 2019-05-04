@@ -1,3 +1,58 @@
-<p>
-  home works!
-</p>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
+  </head>
+  
+  <div class="header">
+  <h2>{{'APP.HomeTitle' | translate}} <i class="fas fa-home"></i> </h2>
+  
+  <app-swap-language></app-swap-language>
+  </div>
+  <div class="underheader">
+    <h3>{{'APP.HomeMessage' | translate}}</h3>
+  </div>
+  <br>
+  <div class="container" style="background-image:url(../../assets/card1.png)">
+  <div class="location">
+      <p><a [routerLink]="['/news']">{{'APP.NewsTitle' | translate}} </a><i class="far fa-newspaper"></i></p>
+  </div>
+  </div> 
+  <br>
+  
+  <div class="container">
+    <div class="location">
+      <p><a [routerLink]="['/weather']">{{'APP.WeatherTitle' | translate}} </a><i class="fas fa-sun"></i></p>
+    </div>
+    </div>
+    <br>
+
+    <div class="container" style="background-image:url(../../assets/card2.png)">
+      <div class="location">
+          <p><a [routerLink]="['/location']">{{'APP.LocationTitle' | translate}} </a><i class="fas fa-map-marked-alt"></i></p>
+      </div>
+      </div> 
+      <br>
+
+      <div class="container" style="background-image:url(../../assets/card3.png)">
+        <div class="location">
+            <p><a [routerLink]="['/location']">{{'APP.LocationParks' | translate}} </a><i class="fas fa-dharmachakra"></i></p>
+        </div>
+        </div> 
+        <br>
+
+        <div class="container" style="background-image:url(../../assets/card4.png)">
+          <div class="location">
+              <p><a [routerLink]="['/']">{{'APP.Back' | translate}} </a><i class="fas fa-arrow-circle-left"></i></p>
+          </div>
+          </div> 
+          <br><br><br>
+   
+  <div class="footer">
+    <div class="topnav">
+        <a [routerLink]="['/']" class="active"><i class="fas fa-home"></i></a>
+        <a [routerLink]="['/news']" class="active"><i class="far fa-newspaper"></i></a>
+        <a [routerLink]="['/weather']" class="active"><i class="fas fa-sun"></i></a>
+        <a [routerLink]="['/location']" class="active"><i class="fas fa-map-marked-alt"></i></a>
+      </div>
+      
+  </div>

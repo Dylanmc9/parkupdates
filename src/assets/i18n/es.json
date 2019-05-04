@@ -17,6 +17,9 @@
       "LocationParks": "Ubicación de los parques temáticos",
       "LocationNavHome": "Casa",
       "LocationNavLocation": "Mi ubicación",
+      "HomeTitle": "Casa",
+      "HomeMessage": "Bienvenido, desplácese para navegar.",
+      "Back": "Espalda",
       "CHANGE_LANG": "Cambiar idioma"
     }
 }
