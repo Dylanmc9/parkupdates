@@ -9,9 +9,9 @@
 
   <h2>{{'APP.LocationParks' | translate}} <i class="fas fa-map-marked-alt"></i></h2>
   <app-swap-language></app-swap-language>
-</div>
-<div class="map"
+  <div class="map"
   leaflet
   (leafletMapReady)="onMapReady($event)"
   [leafletOptions]="options"
   [leafletLayersControl]="layersControl"></div>
+</div>
