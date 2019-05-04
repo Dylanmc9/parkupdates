@@ -1,14 +1,18 @@
+$purpleLight: #bc305b;
+$purpleDark: #7b0228;
+$white: #ffffff;
+
 .top{
     padding-top:20px;
     padding-bottom:10px;
       width: 100%;
-      color: #f1f1f1;
-      background: #bc305b;
-      background: -moz-linear-gradient(left, #bc305b 0%, #7b0228 80%, #7b0228 100%);
-      background: -webkit-linear-gradient(left, #bc305b 0%, #7b0228 80%, #7b0228 100%);
-      background: linear-gradient(to right, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+      color: $white;
+      background: $purpleLight;
+      background: -moz-linear-gradient(left, $purpleLight 0%, $purpleDark 80%, $purpleDark 100%);
+      background: -webkit-linear-gradient(left, $purpleLight 0%, $purpleDark 80%, $purpleDark 100%);
+      background: linear-gradient(to right, $purpleLight 0%, $purpleDark 80%, $purpleDark 100%);
       font-family: 'Montserrat', sans-serif;
-      color: white;
+      color: $white;
       text-align: center;
 }
 .left{

@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+$purpleLight: #bc305b;
+$purpleDark: #7b0228;
+$purpleMedium: #872843;
+$white: #ffffff;
+$orangeLight:#ce7603 ;
+$orangeDark: #af6402;
+
 body {
    background-image   : url(../../assets/coaster3.png);
    background-size    : cover;                  
@@ -18,10 +25,10 @@ body {
   
   .landing-card {
     display: flex;
-    background: #BA3A5D;
-    background: -moz-linear-gradient(left, #BA3A5D 0%, #872843 80%, #6D1D2A 100%);
-    background: -webkit-linear-gradient(left, #BA3A5D 0%, #872843 80%, #6D1D2A 100%);
-    background: linear-gradient(to right, #BA3A5D 0%, #872843 80%, #6D1D2A 100%);
+    background: $purpleLight;
+    background: -moz-linear-gradient(left, $purpleLight 0%, $purpleMedium 80%, $purpleDark 100%);
+    background: -webkit-linear-gradient(left, $purpleLight 0%, $purpleMedium 80%, $purpleDark 100%);
+    background: linear-gradient(to right, $purpleLight 0%, $purpleMedium 80%, $purpleDark 100%);
     opacity: 0.95;
     border-radius: 10px;
     box-shadow: 0 0 20px rgb(0, 0, 0);
@@ -40,7 +47,7 @@ body {
   }
  
   .landing-text {
-    color: #ffffff;
+    color: $white;
     animation-duration: 2s;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -54,14 +61,14 @@ body {
     border-radius: 2rem;
     outline: none;
     border: none;
-    color: white;
+    color: $white;
     font-size: 1.1rem;
     margin-top: 1rem;
     animation-duration: 2s;
   }
   
   .landing-btn:hover {
-    background: linear-gradient(to right, #ce7603, #af6402);
+    background: linear-gradient(to right, $orangeLight, $orangeDark);
     color: rgb(54, 54, 54);
   }
   

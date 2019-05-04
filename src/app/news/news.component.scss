@@ -1,12 +1,18 @@
 //@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 
+$purpleLight: #bc305b;
+$purpleDark: #7b0228;
+$purpleMedium: #872843;
+$white: #ffffff;
+$orangeLight:#f3ab4d ;
+$orangeDark: #ff9306;
 
   mat-toolbar{
-    background: #bc305b;
-    background: -moz-linear-gradient(left, #bc305b 0%, #7b0228 80%, #7b0228 100%);
-    background: -webkit-linear-gradient(left, #bc305b 0%, #7b0228 80%, #7b0228 100%);
-    background: linear-gradient(to right, #bc305b 0%, #7b0228 80%, #7b0228 100%);
+    background: $purpleLight;
+    background: -moz-linear-gradient(left, $purpleLight 0%, $purpleMedium 80%, $purpleDark 100%);
+    background: -webkit-linear-gradient(left, $purpleLight 0%, $purpleMedium 80%, $purpleDark 100%);
+    background: linear-gradient(to right, $purpleLight 0%, $purpleMedium 80%, $purpleDark 100%);
     color:white;
     font-family: 'Montserrat', sans-serif;
   }
@@ -15,7 +21,7 @@
   h1{
     font-family: 'Montserrat', sans-serif;
     text-align: center;  
-    color:#7b0228;
+    color:$purpleDark;
   }
 
 
@@ -32,7 +38,7 @@ color: rgb(54, 54, 54);
 }
 
 .landing-btn {
-  background: linear-gradient(#f3ab4d, #ff9306);
+  background: linear-gradient($orangeLight, $orangeDark);
   padding: 1rem;
   border-radius: 2rem;
   outline: none;
@@ -69,7 +75,7 @@ img{
   }
   
   .topnav a:hover {
-    background: linear-gradient(#f3ab4d, #ff9306);
+    background: linear-gradient($orangeLight, $orangeDark);
     color: rgb(54, 54, 54);
   }
   
@@ -82,14 +88,14 @@ img{
   }
 
   .btn, btn-success, btn-md{
-    background-color: #bc305b;
-    border: #bc305b;
+    background-color: $purpleLight;
+    border: $purpleLight;
   }
   .container{
     padding-top: 50px;
     padding-bottom: 50px;
     border-radius: 25px;
-    background: linear-gradient(#f3ab4d, #ff9306);
+    background: linear-gradient($orangeLight, $orangeDark);
     box-shadow: 5px 5px 5px #888888;
   }
   

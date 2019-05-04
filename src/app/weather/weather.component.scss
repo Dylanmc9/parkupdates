@@ -1,3 +1,5 @@
+$orangeLight:#f3ab4d ;
+$orangeDark: #ff9306;
 
 .topnav {
     overflow: hidden;
@@ -14,7 +16,7 @@
   }
   
   .topnav a:hover {
-    background: linear-gradient(#f3ab4d, #ff9306);
+    background: linear-gradient($orangeLight, $orangeDark);
     color: rgb(54, 54, 54);
   }
   
@@ -27,11 +29,11 @@
   }
 
   .btn, btn-success, btn-md{
-    background-color: #f3ab4d;
-    border: #f3ab4d
+    background-color: $orangeLight;
+    border: $orangeLight;
   }
   .btn:hover{
-    background-color: #ff9306;
+    background-color: $orangeDark;
     color: rgb(43, 43, 43);
   }
   .container{
