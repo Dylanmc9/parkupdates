@@ -19,6 +19,7 @@ import { SpinnerLoadComponent } from './spinner-load/spinner-load.component';
 import { LocationComponent } from './location/location.component';
 import { ParkmapComponent } from './parkmap/parkmap.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { HomeComponent } from './home/home.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -39,7 +40,8 @@ const translateModule = TranslateModule.forRoot({loader: {
     SwapLanguageComponent,
     SpinnerLoadComponent,
     LocationComponent,
-    ParkmapComponent
+    ParkmapComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
